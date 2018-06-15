@@ -9,10 +9,10 @@ from scrapy import signals
 import base64
 
 
-proxyServer = "http://http-dyn.abuyun.com:9020"
+proxyServer = "your proxy address"
 
-proxyUser = "H5J8032531I88O0D"
-proxyPass = "42281D9F37CCC491"
+proxyUser = "username"
+proxyPass = "password"
 proxyAuth = "Basic " + base64.urlsafe_b64encode(bytes((proxyUser + ":" + proxyPass), "ascii")).decode("utf8")
 
 class ProxyMiddleware(object):
